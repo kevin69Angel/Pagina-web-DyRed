@@ -3,8 +3,8 @@ import streamlit as st
 
 st.markdown(
 """
-    <div style="text-align: left; padding: 5px;">
-    <h1 style="text-align: center;color:#701705;margin-bottom: 20px">Introducción y planteamiento del problema</h1>
+    <div style="text-align: center; padding: 5px;">
+    <h1 style="color:#701705;margin-top: -5px;margin-bottom: 40px;font-size: 60px;font-weight: bold"">Introducción y planteamiento del problema</h1>
     </div>
     """, unsafe_allow_html=True
 )
