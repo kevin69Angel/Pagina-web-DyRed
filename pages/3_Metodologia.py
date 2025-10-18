@@ -5,7 +5,7 @@ from components.star_github import footer_component
 st.markdown(
     """
     <div style="text-align: left; padding: 5px;">
-        <h1 style="margin-bottom: 20px;color:#701705;text-align: center">Metodología</h1>
+        <h1 style="margin-bottom: 20px;color:#701705;text-align: center; font-size: 55px;">Metodología</h1>
         <h4>Diseño de la investigación:</h4>
         <p style="font-size:16px; margin-bottom: -0px;">
             <p>El presente proyecto se desarrolló bajo un diseño de investigación aplicada y descriptiva, con enfoque cuantitativo, orientado al análisis, interpretación y visualización de datos provenientes de un conjunto de información (dataset) seleccionado de acuerdo con la temática del curso.</p>
@@ -13,6 +13,8 @@ st.markdown(
                 """,
     unsafe_allow_html=True
 )
+
+
 col1, col2 = st.columns(2)
 with col1:
     st.markdown(
@@ -27,7 +29,6 @@ with col1:
         """,
     unsafe_allow_html=True
 )
-
 
 with col2:
     st.markdown(
@@ -45,13 +46,22 @@ with col2:
 )
 
 
+
 st.markdown(
     """
      <p>En conjunto, este diseño permitió desarrollar un proceso integral de análisis de datos, desde la adquisición hasta la interpretación final, aplicando las buenas prácticas de la analítica y fortaleciendo las competencias en el uso de herramientas tecnológicas y metodológicas del análisis de información.</p>    
         <h4>Fuentes de datos:</h4>
-        <p>Los datos utilizados en este proyecto provienen del conjunto de datos público “DyRET Hexapod Locomotion Data”, disponible en el portal de acceso abierto del **Commonwealth Scientific and Industrial Research Organisation (CSIRO)** de Australia.</p>
+        <p>Los datos utilizados en este proyecto provienen del conjunto de datos público “DyRET Hexapod Locomotion Data”, disponible en el portal de acceso abierto del <strong>Commonwealth Scientific and Industrial Research Organisation (CSIRO)</strong> de Australia.</p>
         <p>Este dataset recopila información experimental obtenida a partir de las pruebas realizadas al robot DyRET (Dynamic Robot for Embodied Testing).</p>
         <h4>Técnicas de análisis utilizadas:</h4>
+        <p>Se utilizaron técnicas estadísticas descriptivas, análisis de correlación, comparación de variables y visualización de datos para identificar patrones, tendencias y relaciones significativas en el conjunto de datos.</p>
+    """,
+    unsafe_allow_html=True
+)
+
+
+st.markdown(
+    """
         <h4>Herramientas tecnológicas:</h4>
         <ul>
             <li>Python</li>

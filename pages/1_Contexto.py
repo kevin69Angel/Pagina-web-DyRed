@@ -4,7 +4,7 @@ import folium
 st.markdown(
     """
     <div style="text-align: center; padding: 5px; ">
-        <h1 style="color:#701705;margin-top: -5px;">DyRET Legged Robot Terrain Classification Dataset</h1>
+        <h1 style="color:#701705;margin-top: -5px;font-size: 55px;font-weight: bold">DyRET Legged Robot Terrain Classification Dataset</h1>
         <p style="font-size:16px; margin-top: 10px;">
             <b>Fuente:</b> QCAT de CSIRO
         </p>
@@ -138,3 +138,66 @@ with col2:
     unsafe_allow_html=True
 )
 
+#Hito 2
+st.markdown(
+    """
+    <div style="text-align: center; padding: 5px; margin-top: 70px; ">
+        <h1 style="color:#701705;margin-top: -5px;">Exploración Inicial de Datos en Python</h1>
+        <p style="font-size:16px; margin-top: 10px;">
+        <hr style="width:60%; margin: 20px auto;">
+        <p style="text-align: center; max-width: 700px; margin: 0 auto; font-size:16px">
+            <b>Esta fase se centra en asegurar la calidad de su dataset y en realizar un análisis exploratorio exhaustivo (EDA) para descubrir patrones, 
+            anomalías y relaciones iniciales entre las variables.<b>DyRET</b>,
+            sobre <b>6 superficies</b> y a <b>6 velocidades</b> diferentes.
+        <div style=" justify-content: center; gap: 15px;margin-top: 30px">
+        <a href="https://colab.research.google.com/drive/1uczDqJNx-5RfNXIooJ5xJSgQ4Cw2fzrs" target="_blank">
+            <button style="
+                background-color:#701705;
+                color:white;
+                border:none;
+                padding:10px 20px;
+                border-radius:8px;
+                cursor:pointer;
+                font-size:16px;
+            ">
+               ¡Haz clik!
+            </button>
+        </a>
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+#hito 3
+st.markdown(
+    """
+    <div style="text-align: center; padding: 5px; margin-top: 50px; ">
+        <h1 style="color:#701705;margin-top: -5px;">Limpieza y Exploración de Datos con Pandas</h1>
+        <p style="font-size:16px; margin-top: 10px;">
+        <hr style="width:60%; margin: 20px auto;">
+        <p style="text-align: center; max-width: 700px; margin: 0 auto; font-size:16px">
+            <b>El objetivo de esta fase es realizar un "chequeo médico" a su dataset. Necesitamos entender su estructura,
+             identificar los tipos de variables y detectar posibles problemas (como datos faltantes) desde el principio.<b>DyRET</b>,
+            sobre <b>6 superficies</b> y a <b>6 velocidades</b> diferentes.
+        <div style=" justify-content: center; gap: 15px;margin-top: 30px">
+        </a>
+                <a href="https://colab.research.google.com/drive/1qRZ1FP8FBRl9PFz39juQCs_E4Itvn2lQ" target="_blank">
+            <button style="
+                background-color:#701705;
+                color:white;
+                border:none;
+                padding:10px 20px;
+                border-radius:8px;
+                cursor:pointer;
+                font-size:16px;
+            ">
+                ¡Haz clik!
+            </button>
+        </a>   
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+st.link_button("Glosario","http://localhost:8501/Glosario")
