@@ -1,4 +1,5 @@
 import streamlit as st
+from components.boton_flotante import Boton_flotante
 
 st.markdown(
     """
@@ -23,3 +24,4 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+Boton_flotante()

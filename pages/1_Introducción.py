@@ -1,6 +1,11 @@
 import streamlit as st
-# Introduccion
+import streamlit as st
+from PIL import Image
+import base64
+from io import BytesIO
+from components.boton_flotante import Boton_flotante
 
+# Introduccion
 st.markdown(
 """
     <div style="text-align: center; padding: 5px;">
@@ -9,14 +14,15 @@ st.markdown(
     """, unsafe_allow_html=True
 )
 
+
 col1, col2 = st.columns([1, 2])
 with col1:
-    st.image("C:/Users/PC/Proyecto_Pagina_Web/Multipagina_Grupo_1/imagen/OIP.png",caption="DyRET Legged Robot Terrain",use_container_width=True)
+    st.image("C:/Users/PC/Proyecto_Pagina_Web/Multipagina_Grupo_1/imagen/DyRet.jpg",caption="DyRET Legged Robot Terrain",use_container_width=True)
 
 with col2:
     st.markdown(
     """
-    <div style="text-align: left; padding: 5px;">
+    <div style="text-align: left;">
         <h4>Contexto:</h4>
         <p style="font-size:16px; margin-top: 8px;">
                  Los robots cuadrúpedos bioinspirados representan un campo de rápido desarrollo en la robótica, especialmente por su capacidad para adaptarse a terrenos complejos y realizar tareas en ambientes desafiantes.
@@ -27,6 +33,17 @@ with col2:
     unsafe_allow_html=True
 )
 
+st.subheader("Sensores Integrados")
+st.markdown("""
+Para lograr una interacción precisa con su entorno, el robot está equipado con dos tipos de sensores avanzados:
+
+* **Sensores de Fuerza (RAW):** En el extremo de cada una de las cuatro patas se encuentra un sensor de fuerza de tres ejes (*Optoforce OMD-20-SH-80N*). Este dispositivo es crucial para registrar las fuerzas de contacto con el suelo en los ejes X, Y y Z.
+
+* **Unidad de Medición Inercial (IMU):** Se incorpora una IMU (*Xsens MTI-30*) que integra:
+    * Un **giroscopio** de tres ejes para medir velocidades de rotación.
+    * Un **acelerómetro** de tres ejes para registrar aceleraciones lineales.
+    * Un **magnetómetro** de tres ejes que proporciona la orientación absoluta del robot con respecto al campo magnético terrestre.
+""")
 st.markdown(
 """
 <div style="text-align: left; padding: 5px;">    
@@ -65,4 +82,4 @@ st.markdown(
 unsafe_allow_html=True
 )
 
-Boton_flotante
+Boton_flotante()

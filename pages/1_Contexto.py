@@ -1,8 +1,12 @@
 import streamlit as st
 import folium
+
+from components.mapa import mapa_interactivo
+from components.plano import plano_tridimensional
+from components.tabla_superficies import tabla_superficies
+from components.star_github import footer_component
 from components.boton_flotante import Boton_flotante
-
-
+ 
 #TITULO PRINCIPAL
 st.markdown(
     """
@@ -69,49 +73,45 @@ st.components.v1.html(map_html, height=500)
 
 
 
-#Descripcón del proyecto
-st.markdown("""
-<div style="
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    margin-top: 25px">
-    <div style="flex:1;text-align:justify;"
-        <p><strong style="font-size: 25px">🦾 Sensores</strong></p>
-        <ul>
-        <li style="margin-bottom:5px;">Raw: Sensor de 3 ejes en cada pata (Optoforce OMD-20-SH-80N).</li>
-        <li style="margin-bottom:30px;">IMU: Giroscopio, acelerómetro y magnetómetro de 3 ejes (Xsens MTI-30).</li>
-        </ul>
-        <p><strong style="font-size: 25px">🔬 Uso del dataset</strong></p>
-        <ul>
-        <li style="margin-bottom:5px;">Validación de modelos cinemáticos/dinámicos.</li>  
-        <li style="margin-bottom:30px;">Clasificación de terreno mediante señales de contacto.</li>
-        <ul>
-        <p><strong style="font-size: 25px">⚙ Velocidades y pasos</strong></p>
-        <ul>
-        <li>Velocidades: 0–1: 0.125 Hz, 2–3: 0.1875 Hz, 4–5: 0.25 Hz.</li>
-        </ul>
-        <ul>
-        <li style="margin-top:-11px;">Longitudes de paso: 0, 2, 4 → 80 mm; 1, 3, 5 → 120 mm. </li> 
-        </ul>
-    </div>
-    <div style="flex:1;text-align:justify;"
-        <p><strong style="font-size: 25px">🧩 Metadatos</strong></p>
-        <ul>
-        <li style="margin-bottom:5px;">Licencia: Creative Commons 4.0</li>  
-        <li style="margin-bottom:5px;">Actualizaciones: No.</li>  
-        <li style="margin-bottom:30px;">Recolección: 10 pruebas por archivo, 8 pasos cada una, en todas las </li>
-        </ul>
-        <p style="margin-top:-35px;">superficies y velocidades (total: 2880 pasos).</p> 
-        <p><strong style="font-size: 25px; margin-bottom: 50px">🌍 Superficies</strong></p>
-        <p style="margin-bottom:30px;">Hormigón, césped, grava, mulch, tierra, arena.</p>
-        <p><strong style="font-size: 25px">🎯 Propósito</strong></p>
-        <p style="margin-bottom:30px;">Evaluar el rendimiento del robot DyRET según la fuerza aplicada por cada pata</p>
-        <p style="margin-top:-35px;">durante la marcha.</p>
-    </div>
-</div>
-""", unsafe_allow_html=True)
+
+
+col1, col2 = st.columns(2)
+with col1:
+    container = st.container(border=True, height=567)
+    container.subheader("Sensores")
+    container.markdown("""
+    * **Raw:** Sensor de 3 ejes en cada pata (*Optoforce OMD-20-SH-80N*).
+    * **IMU:** Giroscopio, acelerómetro y magnetómetro de 3 ejes (*Xsens MTI-30*).
+    """)
+    container.subheader("Uso del Dataset")
+    container.markdown("""
+    * Validación de modelos cinemáticos/dinámicos.
+    * Clasificación de terreno mediante señales de contacto.
+    """)
+    container.subheader("Metadatos")
+    container.markdown("""
+    * **Licencia:** Creative Commons 4.0.
+    * **Actualizaciones:** No.
+    * **Recolección:** 10 pruebas por archivo, 8 pasos cada una (total: **2880 pasos**).
+    """)
+    container.subheader("Proposito")
+    container.markdown(
+        "Evaluar el rendimiento del robot DyRET según la fuerza aplicada por cada pata durante la marcha."
+    )
+
+with col2:
+    st.subheader("Velocidades y Pasos")
+    st.markdown("""
+    | Rango de Prueba | Velocidad (Hz) | Longitud de Paso (mm) |
+    | :---: | :---: | :---: |
+    | **0 - 1** | $0.125$ | $80$ |
+    | **2 - 3** | $0.1875$ | $120$ |
+    | **4 - 5** | $0.25$ | $80$ |
+    """)
+    st.subheader("Superficie")
+    tabla_superficies()
+
+
 
 st.divider()
 
@@ -202,7 +202,5 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-st.link_button("Glosario","http://localhost:8501/Glosario")
 
 Boton_flotante()

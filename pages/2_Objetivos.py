@@ -1,4 +1,5 @@
 import streamlit as st
+from components.boton_flotante import Boton_flotante
 
 # Objetivos
 st.markdown(
@@ -21,3 +22,5 @@ st.markdown(
 )
 
 st.divider()
+
+Boton_flotante()
