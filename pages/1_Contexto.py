@@ -1,5 +1,8 @@
 import streamlit as st
 import folium
+from components.boton_flotante import Boton_flotante
+
+
 #TITULO PRINCIPAL
 st.markdown(
     """
@@ -201,3 +204,5 @@ st.markdown(
 )
 
 st.link_button("Glosario","http://localhost:8501/Glosario")
+
+Boton_flotante()
