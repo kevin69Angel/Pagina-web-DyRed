@@ -118,7 +118,7 @@ st.divider()
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    st.image("C:/Users/PC/Proyecto_Pagina_Web/Multipagina_Grupo_1/imagen/descarga (1).png",caption="Ejes x y z",)
+    st.image("descarga_1.png",caption="Ejes x y z",)
 
 with col2:
     st.markdown(
