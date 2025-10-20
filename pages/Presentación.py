@@ -11,6 +11,13 @@ st.markdown(
         </p>
         <p style="font-size:21px; margin-top: -17px;">
          Kevin angel, Maria Paula Iglesias, Esteban Mendez, Maria Cristina Hernandez. 
+        <p style=" font-size:25px; margin-top: 35px">
+                <b>Profesores:</b> 
+        <p style="font-size:21px; margin-top: -17px;">
+         Ivan Zuñiga
+        </p>
+                <p style="font-size:21px; margin-top: -17px;">
+         Viviana Forero
         </p>
         <p style=" font-size:23px; margin-top: 25px">
             <b>Talento Tech</b> 

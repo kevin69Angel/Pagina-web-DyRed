@@ -14,10 +14,10 @@ st.markdown(
            Los resultados sugieren que el ajuste dinámico de la morfología (longitud de patas) del DyRET podría optimizar la tracción y estabilidad dependiendo del tipo de superficie detectada.</p>
         <p style="font-size:16px; margin-top: 8px;">
            Las patas traseras especialmente la derecha generan las fuerzas más grandes, lo que concuerda con el patrón típico de robots cuadrúpedos donde la parte trasera impulsa y estabiliza la marcha, mientras que las delanteras mantienen el equilibrio y dirección. Además se presenta una distribución asimétrica de fuerzas, donde la pata trasera derecha ejerce la mayor carga, lo que podría indicar una ligera descompensación mecánica o una preferencia direccional del sistema de control. También se presenta una marcha coordinada diagonal ya que en las gráficas temporales se muestra una sincronía entre patas opuestas diagonales. También se concluye que se existe una fase de apoyo bien definida donde las variaciones periódicas de fuerza reflejan una alternancia clara entre apoyo y balanceo, sin irregularidades marcadas. </p>
-        <h4>Recomendaciones:</h4>
-            <p style="font-size:16px; margin-top: 8px;">
-            Teniendo en cuenta esto, se recomienda verificar la calibración de actuadores traseros, especialmente el derecho, para evitar sobrecarga a largo plazo y asegurar una distribución más uniforme de las fuerzas.</p>
-
+    <h4>Recomendaciones:</h4>
+        <p style="font-size:16px; margin-top: 8px;">
+            Se recomienda verificar la calibración de actuadores traseros, especialmente el derecho, para evitar sobrecarga a largo plazo y asegurar una distribución más uniforme de las fuerzas.</p>
+        <p style="font-size:16px; margin-top: 8px;">También se recomienda ajustar los parámetros de rigidez y amortiguación de las patas según el tipo de superficie, para mejorar la eficiencia energética y la estabilidad del robot durante la marcha. Así como validar los datos reales frente a un modelo cinemático y dinámico del robot podría ayudar a calibrar las simulaciones y reducir errores en la predicción del comportamiento en entornos reales.</P>
 
     </div>
     """,

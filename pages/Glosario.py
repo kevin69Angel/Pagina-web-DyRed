@@ -35,7 +35,12 @@ st.markdown(
             <p style="font-size: 20px;margin-left: 35px;"> Pata trasera izquierda.</p>
         <li style=" font-size:25px; margin-top: 35px;margin-bottom: -2px"><strong>B_R:</strong></li>
             <p style="font-size: 20px;margin-left: 35px;"> Pata trasera derecha.</p>
-
+        <li style=" font-size:25px; margin-top: 35px;margin-bottom: -2px"><strong>Morfología del robot:</strong></li>
+            <p style="font-size: 20px;margin-left: 35px;"> Hace referencia a la estructura física o forma del robot (por ejemplo, el largo de sus patas). Dyret puede modificar su morfología para adaptarse mejor.</p>
+        <li style=" font-size:25px; margin-top: 35px;margin-bottom: -2px"><strong>Ruido en los datos:</strong></li>
+            <p style="font-size: 20px;margin-left: 35px;"> Variaciones o errores que aparecen en las mediciones debido a interferencias o imprecisiones en los sensores.</p>
+            <li style=" font-size:25px; margin-top: 35px;margin-bottom: -2px"><strong>Tracción:</strong></li>
+            <p style="font-size: 20px;margin-left: 35px;"> Grado de agarre o fuerza de contacto que tiene el robot con el suelo. Una buena tracción mejora el desplazamiento y evita resbalones.</p>
 
 
     </ul>

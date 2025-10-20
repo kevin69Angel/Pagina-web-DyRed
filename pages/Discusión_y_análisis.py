@@ -105,7 +105,7 @@ for titulo, descripcion in Superficies:
     st.divider()
     col1, col2 = st.columns([2, 2.7])
     with col1:
-        st.markdown(f"<h4 style='color:#A31F05; >{titulo}</h4>", unsafe_allow_html=True)
+        st.markdown(f"<h4 style='color:#A31F05;'>{titulo}</h4>", unsafe_allow_html=True)
     with col2:
         st.markdown(f"<p style='text-align: justify; margin-top:0px ; margin-bottom: -10px ; '>{descripcion}</p>", unsafe_allow_html=True)
 
