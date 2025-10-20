@@ -17,7 +17,8 @@ st.markdown(
 
 col1, col2 = st.columns([1, 2])
 with col1:
-    st.image("https://github.com/kevin69Angel/Pagina-web-DyRed/blob/boton-glosario/imagen/DyRet.jpg",caption="DyRET Legged Robot Terrain",use_container_width=True)
+    st.image("imagen/DyRet.jpg",caption="DyRET Legged Robot Terrain",use_container_width=True, output_format="jpg")
+
 
 with col2:
     st.markdown(

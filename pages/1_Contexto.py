@@ -118,7 +118,7 @@ st.divider()
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    st.image("descarga_1.png",caption="Ejes x y z",)
+    st.image("imagen/descarga_1.png",caption="Ejes x y z", output_format="png")
 
 with col2:
     st.markdown(
