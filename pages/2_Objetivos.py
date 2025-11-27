@@ -1,10 +1,11 @@
 import streamlit as st
+from components.boton_flotante import Boton_flotante
 
 # Objetivos
 st.markdown(
     """
     <div style="text-align: center; padding: 5px;center;">
-        <h1 style="text-align: center;margin-bottom: 20px;color:#701705">Objetivos</h1>
+        <h1 style="text-align: center;margin-bottom: 20px;color:#701705;font-size: 55px;">Objetivos</h1>
         <h4>Objetivo general:</h4>
         <p style="font-size:16px; margin-top: 8px;">
          Analizar la relación existente entre la fuerza ejercida por las patas del robot y las características de la superficie sobre la que se desplaza, considerando las variaciones de velocidad y tipo de terreno.
@@ -21,3 +22,5 @@ st.markdown(
 )
 
 st.divider()
+
+Boton_flotante()

@@ -1,7 +1,7 @@
 from components.star_github import footer_component
 import streamlit as st
 
-st.title("ℹ️ Acerca de")
+st.title(" Acerca de")
 st.write(
     """
     Esta aplicación ha sido desarrollada con **Streamlit** como parte de un proyecto de formación
@@ -14,7 +14,7 @@ st.write(
 
 st.divider()
 
-st.subheader("👨‍💻 Autor")
+st.subheader("👨‍💻 Autores")
 st.write(
     """
     **Desarrollado por:** Joan Esteban Méndez  
@@ -23,6 +23,28 @@ st.write(
     """
 )
 
+st.write()
+st.write(
+    """
+    **Desarrollado por:** Kevin Angel Giraldo  
+    **Rol:** web developer & Analista de Datos  
+    **GitHub:** [kevin69Angel](https://github.com/kevin69Angel?tab=repositories)
+    """
+)
+st.write()
+st.write(
+    """
+    **Desarrollado por:**  Maria Cristina Hernandez  
+    **Rol:** Analista de Datos  
+    """
+)
+st.write()
+st.write(
+    """
+    **Desarrollado por:**  Maria Paula Iglesias  
+    **Rol:** Analista de Datos  
+    """
+)
 st.divider()
 
 st.subheader("🛠️ Tecnologías utilizadas")

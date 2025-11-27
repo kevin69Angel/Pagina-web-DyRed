@@ -19,12 +19,13 @@ datasets = [
     st.Page("pages/graphics.py", title="Graficos", icon="📈"),
     st.Page("pages/Discusión_y_análisis.py", title="Discusión y análisis", icon="🔍"),
     st.Page("pages/Conclusiones y recomendaciones.py", title="Conclusiones y recomendaciones", icon="🎉"),
+    st.Page("pages/Referencias_Bibliograficas.py", title="Referencias Bibliográficas", icon="📚"),
+    st.Page("pages/Glosario.py", title="Glosario", icon="📕")
 ]
 
 extra = [
-    st.Page("pages/Referencias_Bibliograficas.py", title="Referencias Bibliográficas", icon="📚"),
-    st.Page("pages/contact.py", title="Contacto", icon="📞"),
     st.Page("pages/about.py", title="Acerca de", icon="🌐"),
+    st.Page("pages/contact.py", title="Contacto", icon="📞")
 
 ]
 
@@ -35,4 +36,5 @@ pages = {
 }
 
 pg = st.navigation(pages)
+
 pg.run()

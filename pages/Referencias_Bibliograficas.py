@@ -1,7 +1,14 @@
 import streamlit as st
-from components.star_github import footer_component
 
-st.title("Referencias Bibliográficas")
+
+st.markdown(
+    """
+    <div style="text-align: center; padding: 5px; ">
+        <h1 style="color:#701705;margin-top: -5px;font-size: 55px;font-weight: bold">Referencias Bibliográficas</h1>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 st.header("Fuentes y Materiales Consultados")
 st.markdown("""
 **Aulia, S. A., Naoyuki, T., Kazuyoshi, W., Jan, I. A., & Naoyuki, K. (2021).**  
@@ -63,4 +70,3 @@ Revista Ingenierías Universidad de Medellín.
 School of Computer Science, Carnegie Mellon University.  
 [https://robots.stanford.edu/papers/thrun.mapping-tr.pdf](https://robots.stanford.edu/papers/thrun.mapping-tr.pdf)
 """)
-footer_component()
